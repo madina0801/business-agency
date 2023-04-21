@@ -6,6 +6,14 @@ menu.addEventListener('click', () => {
 	navbar.classList.toggle('change');
 	menu.classList.toggle('change');
 })
+
+navbar.addEventListener('click', (event) => {
+	// console.log(event.target.classList.contains('nav-link'));
+	if(event.target.classList.contains('nav-link')) {
+		navbar.classList.toggle('change');
+		menu.classList.toggle('change');
+	}
+})
 //End of Navbar
 
 //About Us Video
